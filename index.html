@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <title>Natural Salon | India's best Beauty Salon Chain</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <div>
+      
+        <a href="https://naturals.in/">
+          <img class="logo" src="https://naturals.in/wp-content/uploads/2022/06/Naturals.svg" alt="natural"></a>
+          </div>
+          <div class="our">
+            
+        <a style="text-decoration: none; color: black;" href="#">Our Services</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Bridal</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Franchise</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Franchise</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Franchise</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">About us</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Media</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Salon Locator</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;"href="#">Pricing</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Acedamy</a>
+        <a style="text-decoration: none; color: black; margin-left: 15px;" href="#">Blog</a>
+      </div>
+    </nav>
+  </header>
+  <br><br>
+  <main>
+    <section>
+      <!-- Carousel -->
+<div id="demo" class="carousel top" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-top-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-top-to="1" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-top-to="2" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-top-to="3" class="active"></button>
+    
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pic-2.png" alt="pic-2" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="pic-3.png" alt="pic-3" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="pic-4.png" alt="pic-4" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="pic-5.png" alt="pic-5" class="d-block w-100">
+    </div>
+    
+
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-top="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-top="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+    </section>
+  <section>
+    <div class="in">
+<h3>Naturals In 2024</h3>
+<h1>Our Naturals<br>Journey</h1>
+</div>
+  <div class="brush">
+        <img src="https://naturals.in/wp-content/uploads/2022/08/Make_up_brush-1.png">
+
+        <p>23 Years Of Pathbreaking Excellence In Beauty Services &<br>Entrepreneurship Opportunities!</p>
+      </div>
+      
+  </section>
+  <section >
+    <div class="natu">
+      <h4>NATURALLY, YOU!</h4>
+      <h1>What Our Magicians Can<br>
+       <span class="do"> Do For You </span>
+        </h1>
+    </div>
+  </section>
+  <section>
+      
+    <img class="bride" src="https://naturals.in/wp-content/uploads/2022/08/gorgeous-indian-bride-with-covered-head-1.jpg">
+      
+      <div class="sub">
+      <h4>EXCLUSIVELY BRIDAL</h4>
+      <h2>Bespoke bridal looks <br>
+        <span class="for">for brides that cover all<br>services.</span></h2>
+      <button class="know">Know More</button>
+    
+    </div>
+  </section>
+  <section>
+    <div class="skin">
+      <img src="gen.png">
+    </div>
+  </section>
+  <section>
+    <img class="bride" src="https://naturals.in/wp-content/uploads/2022/08/gorgeous-indian-bride-with-covered-head-2.png">
+    <div class="sub-1">
+      <h4>HAIR CARE</h4>
+      <h2>Hairstyling and cuts from<br>simple trims to a <span>couture<br> look
+        </span></h2>
+      <button class="knowwhite">Know More</button>
+    </div>
+    
+  </section>
+
+  <section>
+    <div class="sub-3">
+      <h4>FRANCHISE</h4>
+      <h1>Join The<br>Naturals Family</h1>
+      <p>Be A Part of India’s Largest Salon Chain An Exciting<br>Entrepreneurship Opportunity For You.</p>
+      <button class="know-1">Get In Touch</button>
+    
+    </div>
+      <img class="pic-6" src="pic-6.png">
+
+  </section>
+  <section>
+    <img class="blurr" src="https://naturals.in/wp-content/uploads/2022/08/Union-3.png">
+  </section>
+  <section>
+    <img class="bride-1" src="https://naturals.in/wp-content/uploads/2022/08/Image-Placeholder-3.png">
+    
+      <div class="sub-4">
+        <h4>BEAUTY ACADEMY</h4>
+        <h1>Hone Your Skills With<br>Learning Opportunities<br>From Naturals </h1>
+          <p>Interested to Learn the Art of Make-Up?<br>
+            Join Naturals Beauty Academy – A Wave<br>
+            That Creates Artists in The Beauty Industry</p>
+        <button class="know-2">Get In Touch</button>
+      
+      
+
+    </div>
+  </section>
+  <section>
+    <div class="sub-5">
+      <h4>CUSTOMER TESTIMONIALS</h4>
+      <h1>See What Our Customers<br>Has To Say About Us</h1>
+    </div>
+  </section>
+  <section >
+    <div class="sub-6">
+    <img src="https://naturals.in/wp-content/uploads/2022/08/JC020-1.png">
+  </div>
+    <div class="sci">
+      <img src="https://naturals.in/wp-content/uploads/2022/08/Haircut-Scissors-Open.J09-1.png">
+    </div>
+  </section>
+
+    
+</main>
+<footer>
+  `<div class="sub-7">
+    <ul>
+      <li>Quick Links</li>
+      <li class="quick">Home</a></li>
+      <li>About us</li>
+      <li>Contact us</li>
+      <li>Franchasie Opportunities</li>
+      <li>Blogs</li>
+      <li>Privacy policy</li>
+      </ul>
+      </div>
+
+
+<div class="sub-8">
+      <ul>
+      <li>Our Services</li>
+      <li class="quick">Hair Care</li>
+      <li>Skin Care</li>
+      <li>Body Care</li>
+      <li>Events</li>
+      <li>Locate us</li>
+    </ul>
+  </div>
+  <div class="sub-9">
+    <ul>
+      <li>Contact us</li>
+      <li class="quick">Groom India Salon & Spa Pvt. Ltd<br><br>
+        123 & 124, 3rd Floor, Ispahani Centre,<br> Nungabakkam High Rd,<br>
+      Thousand Lights, Chennai,<br>Tamil nadu 600034</li>
+      <i class="fa-solid fa-location-dot"></i><p>Store Locator</p>
+    
+      
+
+    </ul>
+  </div>
+<div class="sub-10">
+    <ul>
+      <li>Get In touch</li>
+      <li class="quick">+91 90926 26262</li>
+      <li>care@naturals.in</li>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+     <i class="fa-brands fa-linkedin"></i>
+     <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-youtube"></i>
+    
+    </ul>
+    
+  </div>
+  
+  <div class="sub-12">
+
+  </div>
+</footer>
+  
+   
+
+</body>
+</html>
